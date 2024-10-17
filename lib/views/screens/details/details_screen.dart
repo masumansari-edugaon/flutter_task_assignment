@@ -53,20 +53,43 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
           ),
           backgroundColor: Colors.white,
           elevation: 0,
+          // leading: Padding(
+          //   padding: const EdgeInsets.all(8.0),
+          //   child: Container(
+          //     decoration: BoxDecoration(
+          //         borderRadius: BorderRadius.all(Radius.circular(10)),
+          //         color: Color(0xffF3F1F4)),
+          //     child: IconButton(
+          //       icon: Icon(Icons.arrow_back_ios, color: Colors.black),
+          //       onPressed: () {
+          //         Navigator.pop(context);
+          //       },
+          //     ),
+          //   ),
+          // ),
           leading: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(10)),
-                  color: Color(0xffF3F1F4)),
-              child: IconButton(
-                icon: Icon(Icons.arrow_back_ios, color: Colors.black),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+                color: Color(0xffF3F1F4),
+              ),
+              child: SizedBox(
+                width: 40,
+                height: 40,
+                child: IconButton(
+                  icon: Icon(Icons.arrow_back_ios, color: Colors.black),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  iconSize: 20,
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.zero,
+                ),
               ),
             ),
           ),
+
           actions: [
             IconButton(
               icon: Icon(CupertinoIcons.arrowshape_turn_up_right,
